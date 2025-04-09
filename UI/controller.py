@@ -56,18 +56,10 @@ class Controller:
         self._view.update_page()
 
     def handleDettagli(self, e):
-        v0 = self._selectedTeam
-        vicini = self._model.getSortedNeighbors(self._selectedTeam)
-
-        self._view._txt_result.controls.append(ft.Text("Stampo i vicini"))
-        for t in vicini:
-            self._view._txt_result.controls.append(ft.Text(f"{t[1]}  {t[0]}"))
-        self._view.update_page()
-
-
-
-    def handlePercorso(self, e):
         pass
+
+
+
 
 
 
